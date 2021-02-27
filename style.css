@@ -1,0 +1,183 @@
+/*making sure the login form is on top of the slideshow*/
+.form { 
+  transform: translate(0%,0%);	
+}
+
+/*styling the slideshow*/
+.slideshow > figure {
+  animation: imageAnimation 72s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+  margin-left: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+/*each image looping through*/
+.slideshow > figure:nth-child(1) { 
+background-image: url('Images/supercar-wallpapers-bugatti-1.jpg'); 
+}
+.slideshow > figure:nth-child(2) {
+  animation-delay: 6s;
+  background-image: url('Images/FB_IMG_1470246800291.jpg');
+}
+.slideshow > figure:nth-child(3) {
+  animation-delay: 12s;
+  background-image: url('Images/FB_IMG_1486288806001.jpg');
+}
+.slideshow > figure:nth-child(4) {
+  animation-delay: 18s;
+  background-image: url('Images/supercar-wallpapers-bugatti-2.jpg');
+}
+.slideshow > figure:nth-child(5) {
+  animation-delay: 24s;
+  background-image: url('Images/supercar-wallpapers-koenigsegg-4.jpg');
+}
+.slideshow > figure:nth-child(6) {
+  animation-delay: 30s;
+  background-image: url('Images/supercar-wallpapers-koenigsegg-1.jpg');
+}
+.slideshow > figure:nth-child(7) {
+  animation-delay: 36s;
+  background-image: url('Images/supercar-wallpapers-koenigsegg-5.jpg');
+}
+.slideshow > figure:nth-child(8) {
+  animation-delay: 42s;
+  background-image: url('Images/supercar-wallpapers-lamborghini-4.jpg');
+}
+.slideshow > figure:nth-child(9) {
+  animation-delay: 48s;
+  background-image: url('Images/supercar-wallpapers-lamborghini-2.jpg');
+}
+.slideshow > figure:nth-child(10) {
+  animation-delay: 54s;
+  background-image: url('Images/supercar-wallpapers-bugatti-5.jpg');
+}
+.slideshow > figure:nth-child(11) {
+  animation-delay: 60s;
+  background-image: url('Images/FB_IMG_1483401148306.jpg');
+}
+.slideshow > figure:nth-child(12) {
+  animation-delay: 66s;
+  background-image: url('Images/supercar-wallpapers-bugatti-1.jpg');
+}
+
+/*The animations of the background slideshow*/
+@keyframes
+imageAnimation {  
+0% {
+ animation-timing-function: ease-in;
+ opacity: 0;
+}
+ 8% {
+ animation-timing-function: ease-out;
+ opacity: 1;
+}
+ 17% {
+ opacity: 1;
+}
+ 25% {
+ opacity: 0;
+}
+ 100% {
+ opacity: 0;
+}
+}
+
+/*Login in form*/
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 420px;
+    padding: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background: rgba(0,0,0,.5);
+}
+
+/*labels of the username and password*/
+.login p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    color: #fff;
+}
+
+.login input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*Username and Password*/
+.login input[type="text"],
+.login input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/*Login button*/
+.login input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    background: #003366;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+/*Hovering over the button and the color change*/
+.login input[type="submit"]:hover{
+    background: #fff;
+    color: #003366;
+}
+
+/*Styling the forget password*/
+.login a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button:hover {
+ opacity: 0.8; }
+ 
+/*For the Image at the top of the login form*/
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: calc(-100px/2);
+    left: calc(50% - 50px);
+}
+h2{
+    margin: 0;
+    padding: 10px 0 20px;
+    color: #efed40;
+    text-align: center;
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 400px) {
+  .text {font-size: 11px}
+}
